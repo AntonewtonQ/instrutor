@@ -1,0 +1,13 @@
+{
+  "name": "ilustra",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "build": "tailwind -i ./style.css -o ./css/main.css",
+    "watch": "tailwind -i ./style.css -o ./css/main.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

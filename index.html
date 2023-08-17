@@ -1,73 +1,92 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-pt">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Instrutor</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
-    <script src='main.js'></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Ilustra</title>
 </head>
 <body>
-    <header class="cabecalho">
-        <div class="logo">
-            <a href=""><img src="img/logo.png" alt=""></a>
-        </div>
-        <nav class="menu">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Quem?</a></li>
-                <li><a href="#">Oque?</a></li>
-            </ul>
-            <div class="login">
-                <a href="#">Contact</a>
+    <main id="MainSection" class="w-full bg-black">
+        <header class="flex flex-row justify-around bg-[#18181b] items-center py-4 mx-12">
+            <div class="rounded-full border border-transparent hover:border-[#a1a1aa] transition- duration-300 hover:bg-[#a1a1aa]">
+                <a href="#"><img src="img/logotipo (1).png" class="w-12" alt="Logotipo"></a>
             </div>
-        </nav>
-    </header>
-    <main>
-        <section class="banner">
-            <!--<article class="photo">
-                <p>Classificar:</p>
-                <p></p>
-            </article>-->
-            <article class="banner-text">
-                <p>Cada um anda no seu ritmo <br> e como pode.</p>
-            </article>
+            <div class="flex flex-row justify-around p-2 px-5 rounded-full bg-[#252529] md:w-1/3 space-x-2">
+                <a href="pages/sobre.html" class="text-bold text-white hover:text-rose-500">Sobre</a>
+                <a href="pages/textos.html" class="text-bold text-white hover:text-rose-500">Textos</a>
+                <a href="pages/project.html" class="text-bold text-white hover:text-rose-500">Projects</a>
+            </div>
+            <a href="" class="">
+            <div class="hidden sm:inline rounded-full bg-[#252529] px-3 py-2  text-center border border-transparent hover:border-[#a1a1aa] transition- duration-200">
+                <i class="text-[#a1a1aa] fa-regular text-2xl fa-moon"></i> 
+            </div>
+            </a>
+        </header>   
+
+        <section class="grid grid-cols-3 gap-2 py-1 mx-12 bg-[#18181b]">
+            <div class="p-8 text-left space-y-8 sm:space-y-20 col-span-2">
+                <h3 class="text-left text-[#fff] text-4xl sm:text-6xl text-bold">Antonewton_ <br>front-end dev, autor, líder de desbravador</h3>
+                <p class="text-[#a1a1aa] text-md sm:text-xl">Meu nome é Antonewton e tenho 22 anos. <br>
+
+                    Sou programador front-end, apaixonado por tecnologia. <br>
+                    Atualmente sou estudante de engenharia informática e tenho 1 ano de experiência com essas tecnologias: HTML, CSS, JavaScript, TailwindCSS.<br>
+                    
+                    Quando não estou estudando, estou desenvolvendo algum projeto pessoal ou nalguma atividade realizada pelo clube de <a class="text-rose-500 hover:text-rose-300" href="https://pt.wikipedia.org/wiki/Desbravadores" target="_blank" rel="noopener noreferrer">desbravadores</a>.</p>
+            </div>
         </section>
 
-        <section class="posts">
-            <article class="principal">
-
-            </article>
-            <article class="secundary">
-                <article class="post">
-
-                </article>
-                <article class="post">
-                    
-                </article>
-                <article class="post">
-                    
-                </article>
-                <article class="post">
-                    
-                </article>
-            </article>
-            <article class="secundary">
-                <article class="post">
-
-                </article>
-                <article class="post">
-                    
-                </article>
-                <article class="post">
-                    
-                </article>
-                <article class="post">
-                    
-                </article>
-            </article>
+        <section class="items-center space-y-4 pb-4 mx-12 bg-[#18181b]">
+            <h1 class="text-bold text-center text-4xl sm:text-6xl text-[#fff]">Projetos</h1>
+            <div class="grid sm:grid-cols-2 md:grid-cols-3 grid-cols-1">
+                <div class="bg-[#252529] border-t-2 border-rose-500 rounded-md hover:shadow-lg hover:shadow-rose-500/50 duration-200 p-4 m-2 space-y-2">
+                    <div class="flex space-x-2">
+                        <a href="" class=" w-1/5"><i class="text-[#18181b] hover:text-[#393940] rounded-full p-2 text-3xl text-center mt-2 fa-solid fa-pencil"></i></a>
+                        <h3 class="text-bold text-2xl my-4 text-[#fff]">In my humble mind</h3>
+                    </div>
+                    <p class="text-[#fff]">Esta parte da página é reservada para todos os textos compilados e organizados por mim em capítulos devidamente ordenados.
+                        Muitos desses foram experiências próprias e alguns são frutos de pura imaginação. <br><a href="" class="text-rose-500 hover:text-white">clique aqui.</a></p>
+                </div>
+                <div class="bg-[#252529] border-t-2 border-rose-500 rounded-md hover:shadow-lg hover:shadow-rose-500/50 duration-200 p-4 m-2 space-y-2">
+                    <div class="flex space-x-2">
+                        <a href="" class=" w-1/5"><i class="text-[#18181b] hover:text-[#393940] rounded-full p-2 text-3xl text-center mt-2 fa-solid fa-computer"></i></a>
+                        <h3 class="text-bold text-2xl my-4 text-[#fff]">Something 02</h3>
+                    </div>
+                    <p class="text-[#fff]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil fugiat quo, quasi amet 
+                        voluptatem nostrum magni architecto officia sequi, illo 
+                        tempore ducimus molestiae magnam neque? Laudantium, vel! Ratione, accusantium autem!</p>
+                </div>
+                <div class="bg-[#252529] border-t-2 border-rose-500 rounded-md hover:shadow-lg hover:shadow-rose-500/50 duration-200 p-4 m-2 space-y-2">
+                    <div class="flex space-x-2">
+                        <a href="" class=" w-1/5"><i class="text-[#18181b] hover:text-[#393940] rounded-full p-2 text-3xl text-center mt-2 fa-solid fa-motorcycle"></i></a>
+                        <h3 class="text-bold text-2xl my-4 text-[#fff]">Something 03</h3>
+                    </div>
+                    <p class="text-[#fff]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil fugiat quo, quasi amet 
+                        voluptatem nostrum magni architecto officia sequi, illo 
+                        tempore ducimus molestiae magnam neque? Laudantium, vel! Ratione, accusantium autem!</p>
+                </div>
+                <div class="bg-[#252529] border-t-2 border-rose-500 rounded-md hover:shadow-lg hover:shadow-rose-500/50 duration-200 p-4 m-2 space-y-2">
+                    <div class="flex space-x-2">
+                        <a href="" class=" w-1/5"><i class="text-[#18181b] hover:text-[#393940] rounded-full p-2 text-3xl text-center mt-2 fa-solid fa-plane"></i></a>
+                        <h3 class="text-bold text-2xl my-4 text-[#fff]">Something 04</h3>
+                    </div>
+                    <p class="text-[#fff]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil fugiat quo, quasi amet 
+                        voluptatem nostrum magni architecto officia sequi, illo 
+                        tempore ducimus molestiae magnam neque? Laudantium, vel! Ratione, accusantium autem!</p>
+                </div>
+            </div>
         </section>
     </main>
+    <footer class="w-full bg-black">
+        <div class="mx-12 bg-[#18181b] border-t border-[#a1a1aa]">
+            <div id="links" class="flex flex-row w-full justify-center space-x-8 items-center p-2">
+                <a href=""><i class="text-[#a1a1aa] hover:text-rose-500 fa-brands fa-discord"></i></a>
+                <a href="https://github.com/AntonewtonQ" target="_blank"><i class="text-[#a1a1aa] hover:text-rose-500 fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/antonewton_/" target="_blank"><i class="text-[#a1a1aa] hover:text-rose-500 fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/antonewton-quima-95aaa3238/" target="_blank"><i class="text-[#a1a1aa] hover:text-rose-500 fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.tudo{
+    display: block;
+    grid-template-columns: 0.4fr 3fr;
+}
+
+
+.menu{
+    text-align: center;
+    padding: 10px;
+    background-color: #18181b;
+    border-bottom: 2px solid #f43f5e;
+}
+
+.menu>h1{
+    color:#fff;
+}
+
+.menu>ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+    list-style: none;
+    width: 600px;
+    margin: auto;
+}
+.menu>ul>button{
+    font-size: 15px;
+    padding: 5px;
+    margin-top: 5px;
+    background-color: #cbcdce;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    color: #000;
+    cursor: pointer;
+}
+
+.menu>ul>button:hover{
+    background-color: #86888a;
+}
+
+.corpo{
+    text-align: center;
+    background-color: #cbcdce;
+    padding: 10px;
+}
+.corpo>div>.text01{
+    width: 500px;
+    margin: 10px auto;
+    border: 1px solid #000;
+    background-color: #fff;
+    padding: 20px;
+}
+.text01>p{
+    text-align: left;
+    font-size: 1.2em;
+}
+.conteudo{
+    display: none;
+}
+
+.menu>ul button.ativo{
+    background-color: #f43f5e;;
+    color: #000;
+}
+
+@media screen and (max-width: 600px) {
+    .menu>ul>button{
+        font-size: 12px;
+        padding: 3px;
+        margin-top: 3px;
+    }
+    .menu>ul{
+        padding: 10px;
+        width: 400px;
+    }
+    .text01>p{
+        font-size: 1em;
+    }
+    .corpo>div>.text01{
+        width: 350px;
+        padding: 10px;
+    }
+    .menu>h1{
+        font-weight: 500;
+        font-size: 1.3em;
+    }
+}
